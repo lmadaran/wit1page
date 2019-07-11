@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body:after {
+    background-image: url(images/backgroundcropped.png);
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.88;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    margin: auto;
+    height: auto;
+    /* if div's inside are larger than 500px, this should 'auto'matically grow */
+    width: 100%;
+    /* 80% of page next container up (the body, whole page) */
+    background-color: white;
+    display: flex;
+    /* define this as a flexbox */
+    flex-flow: row;
+    /* display children as a row, don't wrap inner boxes if screen size gets small*/
+    justify-content: flex-end;
+    /* make sure space around is the same no matter what screen size is */
+    align-items: center;
+    /* center vertically */
+    font-size: 16px;
+}
+
+div#main-logo {
+    width: 150px;
+    margin-right: auto;
+}
+
+div#main-logo img {
+    width: 100%;
+    height: auto;
+    margin-top: -0.5em;
+}
+
+/* basic styles */
+
+/* target any element with "flexbox-row" class inside an element with "flexbox" */
+
+.menu .menu-item {
+    color: black;
+    font-family: Lato-Thin;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 5px;
+}
+
+.menu .menu-item:hover {
+    background-color: white;
+    color: #EB2329;
+    transition: 0.6s;
+}
+
+.menu .menu-item a {
+    padding: 5px;
+}
+
+.menu .menu-item:first-child {
+    margin-left: 7%;
+}
+
+.menu.donate-menu {
+    background-color: #EB2329;
+    justify-content: flex-end;
+}
+
+.menu .menu-button {
+    font-size: 16px;
+    font-family: Lato-Regular;
+    color: white;
+    border: black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+}
+
+.menu .menu-button:hover {
+    background-color: white;
+    color: #EB2329;
+    transition: .2s;
+}
+
+.menu button:last-child {
+    margin-right: 7%;
+    /* because padding on div = 2%, + 5% wanted padding */
+    margin-left: 2%;
+}
+
+.menu div:last-child {
+    margin-right: 5%;
+    /* has 2% additional padding for :hover background */
+}
+
+div.boxes {
+    width: 90%;
+    min-height: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+div.inner-box {
+    margin: 20px;
+    border: 2px solid rgb(65, 6, 8);
+    border-radius: 20px;
+    width: 35%;
+    box-sizing: border-box;
+    min-height: 300px;
+    height: auto;
+    text-align: center;
+    box-shadow: 8px 8px 13px rgb(29, 1, 2);
+    background-color: white;
+}
+
+.inner-box img {
+    width: 12%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: center;
+}
+
+.inner-box img.mailing-icon {
+    width: 12%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: Lato-Black;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: Lato-Bold;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    justify-content: center;
+}
+
+a, p {
+    text-align: center;
+    font-family: Lato-Regular;
+    line-height: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        line-height: 25px;
+    }
+}
+
+.add-space-to-bottom {
+    margin-bottom: 150px;
+}
