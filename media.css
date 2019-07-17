@@ -1,0 +1,264 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1d222c;
+}
+
+.menu {
+    margin: auto;
+    height: auto;
+    /* if div's inside are larger than 500px, this should 'auto'matically grow */
+    width: 100%;
+    /* 80% of page next container up (the body, whole page) */
+    background-color: white;
+    display: flex;
+    /* define this as a flexbox */
+    flex-flow: row;
+    /* display children as a row, don't wrap inner boxes if screen size gets small*/
+    justify-content: flex-end;
+    /* make sure space around is the same no matter what screen size is */
+    align-items: center;
+    /* center vertically */
+    font-size: 16px;
+}
+/* basic styles */
+/* target any element with "flexbox-row" class inside an element with "flexbox" */
+div#main-logo {
+    width: 150px;
+    margin-right: auto;
+}
+div#main-logo img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+.menu .menu-item {
+    color: black;
+    font-family: Lato-Thin;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 5px;
+
+}
+.menu .menu-item:hover a{
+    background-color: white;
+    color: #EB2329;
+    transition: 0.6s;
+}
+.menu .menu-item a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: Lato-Regular;
+}
+.menu .menu-item:first-child {
+    margin-left: 7%;
+}
+.menu.donate-menu {
+    background-color: #EB2329;
+    justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.menu .menu-button {
+    font-size: 16px;
+    font-family: Lato-Regular;
+    color: white;
+    border: black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+}
+.menu .menu-button:hover {
+    background-color: white;
+    color: #EB2329;
+    transition: .2s;
+}
+.menu button:last-child {
+    margin-right: 7%;
+    /* because padding on div = 2%, + 5% wanted padding */
+    margin-left: 2%;
+}
+.menu div:last-child {
+    margin-right: 5%;
+    /* has 2% additional padding for :hover background */
+}
+
+.container {
+    margin-left: 9%;
+}
+h1 {
+    text-align: left;
+    color: #277475;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 55px;
+    font-family: Lato-Black;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #1d222c;
+    letter-spacing: 3px;
+    text-shadow: 1px 1.5px 1px #aee0e0;
+
+}
+hr {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 80px;
+    height: 3px;
+    width: 75%;
+    border-color: #277475;
+    background-color: #277475;
+    align-items: initial;
+}
+h2 {
+    text-align: left;
+    color: #277475;
+    font-family: Lato-Bold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    justify-content: center;
+    letter-spacing: 3px;
+    text-shadow: 1px 1.5px 1px #aee0e0;
+}
+.hrh2 {
+    height: 1px;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+a, p {
+    text-align: center;
+    font-family: Lato-Regular;
+    line-height: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        line-height: 25px;
+    }
+}
+
+iframe {
+    max-width: 400px;
+    max-height: 200px;
+    height: auto;
+    width: 25%;
+    border: 0;
+    margin: 20px;
+    justify-content: center;
+}
+img {
+    width: 250px;
+    height: auto;
+    margin: 20px;
+}
+img:hover {
+    transition: 0s;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.img-audio {
+    width: 400px;
+    height: auto;
+}
+
+.add-space-to-bottom {
+    height: 150px;
+}
+.footer {
+    margin: auto;
+    height: auto;
+    /* if div's inside are larger than 500px, this should 'auto'matically grow */
+    width: 100%;
+    /* 80% of page next container up (the body, whole page) */
+    background-color: #EB2329;
+    display: flex;
+    /* define this as a flexbox */
+    flex-flow: column;
+    /* display children as a row, don't wrap inner boxes if screen size gets small*/
+    justify-content: space-around ;
+    /* make sure space around is the same no matter what screen size is */
+    font-size: 16px;
+}
+.footer .footer-menu {
+    background-color: #EB2329;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer .footer-menu .footer-item {
+    color: white;
+    font-family: Lato-Thin;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2px;
+    flex-direction: column;
+    
+}
+.footer .footer-menu .footer-item:hover a {
+    background-color: #EB2329;
+    color: black;
+    transition: 0.6s;
+}
+.footer .footer-item a {
+    padding: 10px;
+    flex-direction: column;
+    text-decoration: none;
+    color:white; 
+}
+.footer .footer-menu .footer-button {
+    font-size: 16px;
+    font-family: Lato-Regular;
+    color: white;
+    border: black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+.footer .footer-button:hover {
+    background-color: white;
+    color: #EB2329;
+    transition: .2s;
+}
+body > div.footer > div.footer-menu > div:nth-child(1) > button:nth-child(1) {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.footer .footer-social {
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+    
+}
+.footer-social #social-icons {
+    width: 45px;
+    height: auto;   
+    margin: 5px;
+}
+#social-icons:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+.footer .footer-rights {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}

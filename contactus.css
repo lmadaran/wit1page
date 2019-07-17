@@ -45,7 +45,7 @@ div#main-logo {
 div#main-logo img {
     width: 100%;
     height: auto;
-    margin-top: -0.5em;
+    margin-top: 1em;
 }
 .menu .menu-item {
     color: black;
@@ -54,13 +54,15 @@ div#main-logo img {
     padding-right: 2%;
     margin: 5px;
 }
-.menu .menu-item:hover {
+.menu .menu-item:hover a{
     background-color: white;
     color: #EB2329;
     transition: 0.6s;
 }
 .menu .menu-item a {
     padding: 5px;
+    text-decoration: none;
+    color: black;
 }
 .menu .menu-item:first-child {
     margin-left: 7%;
@@ -204,12 +206,12 @@ a, p {
     font-family: Lato-Thin;
     padding-left: 4%;
     padding-right: 4%;
-    padding-top: 4px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 2px;
     flex-direction: column;
 }
-.footer .footer-menu .footer-item:hover {
+.footer .footer-menu .footer-item:hover a{
     background-color: #EB2329;
     color: black;
     transition: 0.6s;
@@ -217,6 +219,8 @@ a, p {
 .footer .footer-item a {
     padding: 10px;
     flex-direction: column;
+    text-decoration: none;
+    color: white;
 }
 .footer .footer-menu .footer-button {
     font-size: 16px;
@@ -250,18 +254,20 @@ body > div.footer > div.footer-menu > div:nth-child(1) > button:nth-child(1) {
     
 }
 .footer-social #social-icons {
-    width: 50px;
+    width: 45px;
     height: auto;   
-    margin: 4px;
-    margin-top: 2px;
+    margin: 5px;
 }
 #social-icons:hover {
     background-color: white;
     border-radius: 20px;
 }
+img:hover {
+    transition: 0s;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 .footer .footer-rights {
     margin-top: 5px;
     color: white;
-    align-items: center;
-    justify-items: flex-start;
+    text-align: center;
 }
