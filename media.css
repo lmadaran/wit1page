@@ -154,7 +154,7 @@ iframe {
     margin: 20px;
     justify-content: center;
 }
-img {
+.container img {
     width: 250px;
     height: auto;
     margin: 20px;
@@ -164,7 +164,7 @@ img:hover {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .img-audio {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 
