@@ -10,7 +10,9 @@
 
 <body>
     <div class="menu donate-menu">
-        <button class="menu-button" type="button" onclick="openDigitalNestDonatePage()">Donate</button>
+        <button class="menu-button">
+            <a href="donate.html"> Donate </a>
+            </button>
         <button class="menu-button" type="Button" onclick="openDigitalNestPage()">Get Involved</button>
     </div>
     <div class="menu">
@@ -18,7 +20,7 @@
             <img src="icons/NESTudios_logo.png">
         </div>
         <div class="menu-item">
-            <a>WHO WE ARE?</a>
+            <a href="home.html">WHO WE ARE?</a>
         </div>
         <div class="menu-item">
             <a href="media.html">WHAT WE DO?</a>
@@ -85,11 +87,11 @@
     <div class="footer">
         <div class="footer-menu">
             <div class="footer-item">
-                <button class="footer-button" type="button" onclick="openDigitalNestDonatePage()">Donate</button>
+                <button class="footer-button" type="button" onclick="openDonatePage()">Donate</button>
                 <button class="footer-button" type="button" onclick="openDigitalNestPage()">Get Involved</button>
             </div>
             <div class="footer-item">
-                <a>WHO WE ARE?</a>
+                <a href="home.html">WHO WE ARE?</a>
             </div>
             <div class="footer-item">
                 <a href="media.html">WHAT WE DO?</a>
@@ -109,11 +111,8 @@
         </div>
     </div>
     <script>
-            function openDigitalNestDonatePage() {
-                window.location = "https://give.digitalnest.org/give/238376/#!/donation/checkout/";
-            }
-    </script>
-    <script>
+            function openDigitalNestPage() {
+            window.location = "https://digitalnest.org/get-involved/become-a-member/";
             function openDigitalNestPage() {
                 window.location = "https://digitalnest.org/get-involved/become-a-member/";
             }

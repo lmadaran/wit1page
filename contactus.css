@@ -90,6 +90,25 @@ div#main-logo img {
     color: #EB2329;
     transition: .2s;
 }
+.menu .menu-button a{
+    font-size: 16px;
+    font-family: Lato-Regular;
+    color: white;
+    border: black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+    text-decoration: none;
+}
+.menu .menu-button:hover a{
+    background-color: white;
+    color: #EB2329;
+    transition: .2s;
+    text-decoration: none;
+}
 .menu button:last-child {
     margin-right: 7%;
     /* because padding on div = 2%, + 5% wanted padding */
