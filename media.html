@@ -10,7 +10,7 @@
 
 <body>
     <div class="menu donate-menu">
-        <button class="menu-button" type="button" onclick="alert('Donate!')">Donate</button>
+        <button class="menu-button" type="button" onclick="openDigitalNestDonatePage()">Donate</button>
         <button class="menu-button" type="button" onclick="openDigitalNestPage()">Get Involved</button>
     </div>
     <div class="menu">
@@ -79,7 +79,7 @@
     <div class="footer">
         <div class="footer-menu">
             <div class="footer-item">
-                <button class="footer-button" type="button" onclick="alert('Donate!')">Donate</button>
+                <button class="footer-button" type="button" onclick="openDigitalNestDonatePage()">Donate</button>
                 <button class="footer-button" type="button" onclick="openDigitalNestPage()">Get Involved</button>
             </div>
             <div class="footer-item">
@@ -102,6 +102,11 @@
             <p> 2019 DigitalNEST. All rights </p>
         </div>
     </div>
+    <script>
+    function openDigitalNestDonatePage() {
+        window.location = "https://give.digitalnest.org/give/238376/#!/donation/checkout/";
+    }
+    </script>
     <script>
     function openDigitalNestPage() {
         window.location = "https://digitalnest.org/get-involved/become-a-member/";
