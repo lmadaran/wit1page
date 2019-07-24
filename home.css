@@ -52,63 +52,62 @@ a,p {
 .menu {
     margin: auto;
     height: auto;
-    /* if div"s inside are larger than 500px, this should "auto"matically grow */
+    /* if div's inside are larger than 500px, this should 'auto'matically grow */
     width: 100%;
     /* 80% of page next container up (the body, whole page) */
     background-color: white;
     display: flex;
     /* define this as a flexbox */
     flex-flow: row;
-    /* display children as a row, don"t wrap inner boxes if screen size gets small*/
+    /* display children as a row, don't wrap inner boxes if screen size gets small*/
     justify-content: flex-end;
     /* make sure space around is the same no matter what screen size is */
     align-items: center;
     /* center vertically */
     font-size: 16px;
 }
-
+/* basic styles */
+/* target any element with "flexbox-row" class inside an element with "flexbox" */
 div#main-logo {
     width: 150px;
     margin-right: auto;
 }
-
 div#main-logo img {
     width: 100%;
     height: auto;
-    margin-top: -0.5em;
+    margin-top: 1em;
 }
-
 .menu .menu-item {
     color: black;
-    font-family: "Lato", Arial;
-    font-weight: 400;
+    font-family: Lato-Thin;
     padding-left: 2%;
     padding-right: 2%;
     margin: 5px;
-}
 
-.menu .menu-item:hover {
+}
+.menu .menu-item:hover a{
     background-color: white;
     color: #EB2329;
     transition: 0.6s;
 }
-
 .menu .menu-item a {
     padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: Lato-Regular;
 }
-
 .menu .menu-item:first-child {
     margin-left: 7%;
 }
-
 .menu.donate-menu {
     background-color: #EB2329;
     justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
-
 .menu .menu-button {
     font-size: 16px;
-    font-family: "Lato", Arial;
+    font-family: Lato-Regular;
     color: white;
     border: black;
     background-color: black;
@@ -118,26 +117,42 @@ div#main-logo img {
     padding-right: 15px;
     margin: 2px;
 }
-
 .menu .menu-button:hover {
     background-color: white;
     color: #EB2329;
     transition: .2s;
 }
-
+.menu .menu-button a{
+    font-size: 16px;
+    font-family: Lato-Regular;
+    color: white;
+    border: black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+    text-decoration: none;
+}
+.menu .menu-button:hover a{
+    background-color: white;
+    color: #EB2329;
+    transition: .2s;
+    text-decoration: none;
+}
 .menu button:last-child {
     margin-right: 7%;
     /* because padding on div = 2%, + 5% wanted padding */
     margin-left: 2%;
 }
-
 .menu div:last-child {
     margin-right: 5%;
     /* has 2% additional padding for :hover background */
 }
 
 .hero-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/standByMe.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images-home/standByMe.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,13 +165,17 @@ div#main-logo img {
     left: 50%;
     /* transform: translate(-50%, -50%); */
     color: white;
+    letter-spacing: 2px;
+    line-height: 20px;
 }
 
 .textBoxBody {
-    width: 50%;
-    background-color: #000;
+    width: 70%;
+    background-color: #1d222c;
     color: #fff;
     text-align: center;
+    letter-spacing: 2.2px;
+    line-height: 21px;
     /* box-sizing: border-box; */
 }
 
